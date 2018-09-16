@@ -31,7 +31,7 @@ export const COSMIC_THEME = {
       itemColor: '#BEBBFF',
       itemBorderColor: '#ffffff',
       itemEmphasisBorderColor: '#ffffff',
-      shadowLineDarkBg: '#655ABD',
+      shadowLineDarkBg: '#3399FF',
       shadowLineShadow: 'rgba(33, 7, 77, 0.5)',
       gradFrom: 'rgba(118, 89, 255, 0.4)',
       gradTo: 'rgba(164, 84, 255, 0.5)',

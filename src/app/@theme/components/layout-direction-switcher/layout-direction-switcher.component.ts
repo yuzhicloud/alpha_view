@@ -4,6 +4,7 @@ import { takeWhile } from 'rxjs/operators/takeWhile';
 
 @Component({
   selector: 'ngx-layout-direction-switcher',
+    /* disable for beta version
   template: `
     <ngx-switcher
       [firstValue]="directions.RTL"
@@ -16,6 +17,8 @@ import { takeWhile } from 'rxjs/operators/takeWhile';
     >
     </ngx-switcher>
   `,
+  */
+    template: ``,
 })
 export class LayoutDirectionSwitcherComponent implements OnDestroy {
   directions = NbLayoutDirection;

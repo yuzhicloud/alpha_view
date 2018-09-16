@@ -5,7 +5,8 @@ import { StateService } from '../../../@core/data/state.service';
 @Component({
   selector: 'ngx-theme-settings',
   styleUrls: ['./theme-settings.component.scss'],
-  template: `
+/* disable for beta version
+    template: `
     <h6>LAYOUTS</h6>
     <div class="settings-row">
       <a *ngFor="let layout of layouts"
@@ -29,7 +30,8 @@ import { StateService } from '../../../@core/data/state.service';
     <div class="switcher">
       <ngx-layout-direction-switcher [vertical]="true"></ngx-layout-direction-switcher>
     </div>
-  `,
+  `,*/
+    template: ``,
 })
 export class ThemeSettingsComponent {
 
