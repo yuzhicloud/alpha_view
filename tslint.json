@@ -101,7 +101,8 @@
       "check-separator",
       "check-type"
     ],
-    "directive-selector": [
+
+    /*"directive-selector": [
       true,
       "attribute",
       "ngx",
@@ -112,7 +113,7 @@
       "element",
       "ngx",
       "kebab-case"
-    ],
+    ],*/
     "ban": [
       true,
       "eval",
