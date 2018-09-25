@@ -25,6 +25,7 @@
     "Blank Page": "空白页",
     "Report" : "报表",
 	"Fault": "告警",
-    "Diagnose" :  "诊断"
+    "Diagnose" :  "诊断",
+    "Configuration" : "系统配置 "
 
 }
