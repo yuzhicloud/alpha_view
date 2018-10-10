@@ -11,9 +11,11 @@
 /node/
 node_tmp/
 node_modules/
+dist
 npm-debug.log.*
 /.awcache/*
 /.cache-loader/*
+
 
 ######################
 # SASS
