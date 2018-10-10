@@ -15,11 +15,11 @@
                     <i class="fa fa-language"></i> {{ 'Language' | translate }} <b class="caret"></b>
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
+	                <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('zh-CHS')">
+                        {{ '中文' | translate }}
+                    </a>
                     <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')">
                         {{ 'English' | translate }}
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('zh-CHS')">
-                        {{ '中文' | translate }}
                     </a>
                 </div>
             </li>

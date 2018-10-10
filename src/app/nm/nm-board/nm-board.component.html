@@ -1,0 +1,47 @@
+<div [@routerTransition]>
+  <app-page-header [heading]="'Node Management' | translate" [icon]="'fa-table'"></app-page-header>
+  <div class="row">
+
+    <div class="col col-xl-6 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">Managed Node List</div>
+        <div class="card-body table-responsive">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>{{'Node Name' | translate }} </th>
+              <th>{{'Node Ip' | translate }} </th>
+              <th>{{'Node type' | translate }} </th>
+              <th>{{'Node location' | translate }} </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-active">
+              <th scope="row">1</th>
+              <td>domino 1</td>
+              <td>192.168.100.35</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr class="table-success">
+              <th scope="row">2</th>
+              <td>domino 2</td>
+              <td>192.168.100.39</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">3</th>
+              <td>domino 3</td>
+              <td>192.168.100.43</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
