@@ -23,9 +23,30 @@
     "Menu": "菜单",
     "Submenu": "子菜单",
     "Blank Page": "空白页",
+    "Node Management" : " 节点管理",
+    "Smart Log Analysis" : "智能日志分析",
     "Report" : "报表",
 	"Fault": "告警",
-    "Diagnose" :  "诊断",
-    "Configuration" : "系统配置 "
+    "Fault Management": "告警管理",
+    "Diagnose" :  "巡检",
+    "Configuration" : "系统配置 ",
+
+    "Alarm Name": "告警名称",
+    "Alarm Type": "告警类型",
+    "Alarm Desc": "告警描述",
+    "Alarm Priority": "告警等级",
+    "Alarm Date": "告警日期",
+    "Alarm Status": "当前状态",
+
+    "One-key Diagnosis" : "一键诊断",
+    "URL Diagnosis" : "URL 诊断",
+    "IMAP Diagnosis" : "IMAP 诊断",
+    "SMTP Diagnosis" : "SMTP 诊断",
+    "Zombie Mail Diagnosis" : "僵死邮件诊断",
+    "NRPC Diagnosis" : "NRPC 诊断",
+	"Diagnosis Item" : "检测项",
+    "Diagnosis Result" : "检测结果",
+    "Diagnosis Desc" : "检测描述",
+    "Diagnosis Comments" : "备注"
 
 }

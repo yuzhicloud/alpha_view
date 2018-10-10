@@ -24,8 +24,29 @@
     "Menu": "Menu",
     "Submenu": "Submenu",
     "Blank Page": "Blank Page",
+    "Node Management" : "Node Management",
+    "Smart Log Analysis" : "Smart Log Analysis",
     "Report" : "Report",
     "Fault": "Fault",
+    "Fault Management": "Fault Management",
     "Diagnose" : "Diagnose",
-    "Configuration": "System Confiuration"
+    "Configuration": "System Confiuration",
+
+    "Alarm Name": "Alarm Name",
+    "Alarm Type": "Alarm Type",
+    "Alarm Desc": "Alarm Desc",
+    "Alarm Priority": "Alarm Priority",
+    "Alarm Date": "Alarm Date",
+    "Alarm Status": "Alarm Status",
+
+    "One-key Diagnosis" : "One Key Diagnosis",
+    "URL Diagnosis" : "URL Diagnosis",
+    "IMAP Diagnosis" : "IMAP Diagnosis ",
+    "SMTP Diagnosis" : "SMTP Diagnosis",
+    "Zombie Mail Diagnosis" : "Zombie Mail Diagnosis",
+    "NRPC Diagnosis" : "NRPC Diagnosis",
+    "Diagnosis Item" : "Diagnosis Item",
+    "Diagnosis Result" : "Diagnosis Result",
+    "Diagnosis Desc" : "Diagnosis Desc",
+    "Diagnosis Comments" : "Diagnosis Comments"
 }

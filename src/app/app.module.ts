@@ -30,7 +30,7 @@ export const createTranslateLoader = (http: HttpClient) => {
         }),
         AppRoutingModule
     ],
-    declarations: [AppComponent],
+    declarations: [AppComponent ],
     providers: [AuthGuard],
     bootstrap: [AppComponent]
 })

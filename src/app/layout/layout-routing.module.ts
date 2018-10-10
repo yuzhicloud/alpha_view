@@ -9,10 +9,12 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'dashboard', pathMatch: 'prefix' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
+            { path: 'nodes', loadChildren: '../nm/node-management.module#NodeManagementModule'},
+            { path: 'smartlog', loadChildren: '../smartlog/smart-log.module#SmartLogModule'},
+            { path: 'fault', loadChildren: '../fm/fault-management.module#FaultManagementModule'},
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
-            { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
-            { path: 'forms', loadChildren: './form/form.module#FormModule' },
-            { path: 'diagnose', loadChildren: '../diagnose/diagnose.module#DiagnoseModule'}
+            { path: 'diagnose', loadChildren: '../diagnose/diagnose.module#DiagnoseModule'},
+            { path: 'sysconf', loadChildren: '../sysconf/sysconf.module#SysconfModule'}
         ]
     }
 ];
