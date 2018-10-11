@@ -48,6 +48,13 @@
 	"Diagnosis Item" : "检测项",
     "Diagnosis Result" : "检测结果",
     "Diagnosis Desc" : "检测描述",
-    "Diagnosis Comments" : "备注"
+    "Diagnosis Comments" : "备注",
+
+    "Managed Node List" : "节点列表",
+    "Node Name" : "节点名称",
+    "Node Ip" : "IP 地址",
+    "Node Type" : "节点类型",
+    "Node Location" : "节点位置",
+    "Node Operation" : "节点操作"
 
 }

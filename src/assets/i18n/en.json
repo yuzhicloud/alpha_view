@@ -50,5 +50,12 @@
     "Diagnosis Item" : "Diagnosis Item",
     "Diagnosis Result" : "Diagnosis Result",
     "Diagnosis Desc" : "Diagnosis Desc",
-    "Diagnosis Comments" : "Diagnosis Comments"
+    "Diagnosis Comments" : "Diagnosis Comments",
+
+    "Managed Node List" : "Managed Node List",
+    "Node Name" : "Node Name",
+    "Node Ip" : "Node IP",
+    "Node Type" : "Node Type",
+    "Node Location" : "Node Location",
+    "Node Operation" : "Node Operation"
 }
