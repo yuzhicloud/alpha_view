@@ -9,7 +9,7 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'dashboard', pathMatch: 'prefix' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-            { path: 'nodes', loadChildren: '../nm/node-management.module#NodeManagementModule'},
+            { path: 'nm', loadChildren: '../nm/node-management.module#NodeManagementModule'},
             { path: 'smartlog', loadChildren: '../smartlog/smart-log.module#SmartLogModule'},
             { path: 'fault', loadChildren: '../fm/fault-management.module#FaultManagementModule'},
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },

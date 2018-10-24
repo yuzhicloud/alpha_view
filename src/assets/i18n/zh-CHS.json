@@ -51,10 +51,13 @@
     "Diagnosis Comments" : "备注",
 
     "Managed Node List" : "节点列表",
+    "Node Id" : "节点编号",
     "Node Name" : "节点名称",
     "Node Ip" : "IP 地址",
-    "Node Type" : "节点类型",
+    "Node User" : "节点管理用户",
+    "Node Password" : "管理用户密码",
     "Node Location" : "节点位置",
+    "Node Status" : "节点状态",
     "Node Operation" : "节点操作"
 
 }

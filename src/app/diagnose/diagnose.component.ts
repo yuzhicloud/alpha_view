@@ -16,4 +16,7 @@ export class DiagnoseComponent implements OnInit {
     ngOnInit() {
     }
 
+    startJob() {
+
+    }
 }

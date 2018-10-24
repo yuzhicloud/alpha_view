@@ -2,31 +2,46 @@
   <app-page-header [heading]="'Node Management' | translate" [icon]="'fa-table'"></app-page-header>
   <div class="row">
 
-    <div class="col col-xl-6 col-lg-12">
+    <div class="col col-xl-8 col-lg-12">
       <div class="card mb-3">
         <div class="card-header">{{'Managed Node List'|translate}}</div>
         <div class="card-body table-responsive">
           <table class="table table-bordered">
             <thead>
-            <tr>
-              <th>#</th>
+              <th>id</th>
               <th>{{'Node Name' | translate }} </th>
               <th>{{'Node Ip' | translate }} </th>
-              <th>{{'Node Type' | translate }} </th>
+              <th>{{'Node User' | translate }} </th>
+              <th>{{'Node Password' | translate }} </th>
               <th>{{'Node Location' | translate }} </th>
-              <th>{{'Node Operation' | translate}}</th>
-            </tr>
+              <th >{{'Node Status' | translate}} </th>
+              <th >{{'Node Operation' | translate}} </th>
+              <!--id: number;
+              name: string;
+              ipAddr: string;
+              user: string;
+              password: string;
+              location: string;
+              status: string;-->
             </thead>
             <tbody>
-            <tr class="table-active">
-              <th scope="row">1</th>
-              <td>domino 1</td>
-              <td>47.106.227.209</td>
-              <td>Windows Server 2016</td>
-              <td>阿里云-华南D区</td>
+
+            <tr *ngFor="let node of nodes">
+              <td>{{node.id}}</td>
+              <td>{{node.name}}</td>
+              <td>{{node.ipAddr}}</td>
+              <td>{{node.user}}</td>
+              <td>{{node.password}}</td>
+              <td>{{node.location}}</td>
+              <td>{{node.status}}</td>
+              <td><button class="btn btn-danger" (click)="deleteNode(node)"> Delete</button>
+                <button class="btn btn-success" (click)="editNode(node)" style="margin-left: 20px;"> Edit</button>
+              </td>
             </tr>
 
             </tbody>
+
+            <button class="btn btn-success"  routerLink="add-node"> Add Node</button>
           </table>
         </div>
       </div>

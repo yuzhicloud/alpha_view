@@ -53,9 +53,12 @@
     "Diagnosis Comments" : "Diagnosis Comments",
 
     "Managed Node List" : "Managed Node List",
+    "Node Id" : "Node Id",
     "Node Name" : "Node Name",
     "Node Ip" : "Node IP",
-    "Node Type" : "Node Type",
+    "Node User" : "Node Managed User",
+    "Node Password" : "Managed User's Password",
     "Node Location" : "Node Location",
+    "Node Status" : "Node Status",
     "Node Operation" : "Node Operation"
 }
