@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Node</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Node Name:</label>
+      <input formControlName="name" placeholder="Node Name" name="name" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="ipAddr">Node Ipaddr:</label>
+      <input ng-pattern='/^([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})$/' formControlName="ipAddr" placeholder="0.0.0.0" name="ipAddr" class="form-control" id="ipAddr">
+    </div>
+
+    <div class="form-group">
+      <label for="user">Node User:</label>
+      <input formControlName="user" placeholder="Managed UserName" name="user" class="form-control" id="user">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Node Password:</label>
+      <input formControlName="password" placeholder="Managed User's Password" name="password" class="form-control" id="password">
+    </div>
+
+    <div class="form-group">
+      <label for="location">Node Location:</label>
+      <input formControlName="location" placeholder="Node Location" name="location" class="form-control" id="location">
+    </div>
+
+    <button class="btn btn-success">Confirm</button>
+    <button class="btn btn-success" (click)="onCancel()" >Cancel</button>
+  </form>
+</div>
