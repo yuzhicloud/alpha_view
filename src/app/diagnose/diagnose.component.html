@@ -1,14 +1,14 @@
 <div [@routerTransition]>
 	<app-page-header [heading]="'Diagnose' | translate" [icon]="'fa-table'"></app-page-header>
 	<div class="col">
-		<button type="button" class="btn btn-primary" (click)="startJob()">{{'One-key Diagnosis' | translate}}</button>
+		<button type="button" class="btn btn-primary" (click)="getJobs()">{{'One-key Diagnosis' | translate}}</button>
 	</div>
 	<div><span>&nbsp;</span></div>
 	<div class="row">
 
 		<div class="col col-xl-6 col-lg-12">
 			<div class="card mb-3">
-				<div class="card-header">{{'URL Diagnosis' | translate }}</div>
+				<div class="card-header">{{'Diagnosis' | translate }}</div>
 				<div class="card-body table-responsive">
 					<table class="table table-bordered">
 					<thead>
@@ -16,15 +16,18 @@
 						<th>Item Id</th>
 						<th>Node IP</th>
 						<th>Protocol</th>
-						<th>result</th>
+						<th>Result</th>
+						<th>Issues</th>
 					</tr>
 					</thead>
 					<tbody>
-					<tr class="table-active">
-						<th scope="row">1</th>
-						<td>192.168.1.1</td>
-						<td>SMTP</td>
-						<td>FAILUE</td>
+
+					<tr *ngFor="let diagnoseJob of diagnoseJobs ">
+						<td>{{diagnoseJob.id}}</td>
+						<td>{{diagnoseJob.nodeIpAddr}}</td>
+						<td>{{diagnoseJob.protocol}}</td>
+						<td>{{diagnoseJob.result}}</td>
+						<td>{{diagnoseJob.issues}}</td>
 					</tr>
 					</tbody>
 				</table>

@@ -4,6 +4,7 @@ import { DiagnoseComponent } from './diagnose.component';
 import {DiagnoseRoutingModule} from './diagnose-routing.module';
 import {PageHeaderModule} from '../shared/modules';
 import {TranslateModule} from '@ngx-translate/core';
+import {DiagnoseService} from './diagnose-service';
 
 @NgModule({
     imports: [
@@ -12,6 +13,9 @@ import {TranslateModule} from '@ngx-translate/core';
         PageHeaderModule,
         TranslateModule
     ],
-    declarations: [DiagnoseComponent]
+    declarations: [DiagnoseComponent],
+    providers: [DiagnoseService]
 })
-export class DiagnoseModule { }
+export class DiagnoseModule {
+
+}

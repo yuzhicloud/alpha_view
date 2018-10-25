@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {routerTransition} from '../router.animations';
 import {NavigationEnd, Router} from '@angular/router';
-import {TranslateService} from '@ngx-translate/core';
+import {DiagnoseJob} from './diagnose-job.model';
+import {DiagnoseService} from './diagnose-service';
 
 @Component({
     selector: 'app-diagnose',
@@ -11,12 +12,23 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class DiagnoseComponent implements OnInit {
 
-    constructor(){}
+    diagnoseJobs: DiagnoseJob[];
 
-    ngOnInit() {
+    constructor(private router: Router, private diagnoseService: DiagnoseService) {
+
     }
 
-    startJob() {
+    ngOnInit() {
+        /*this.diagnoseService.getJobs()
+            .subscribe( data => {
+                this.diagnoseJobs = data;
+            });*/
+    }
 
+    getJobs() {
+        this.diagnoseService.getJobs()
+            .subscribe( data => {
+                this.diagnoseJobs = data;
+            });
     }
 }

@@ -13,7 +13,6 @@ import { Node } from '../model/node.model';
 export class NmBoardComponent implements OnInit {
 
     nodes: Node[];
-    // : any = [];
 
     constructor(private router: Router, private nodeService: NodeService) {
 

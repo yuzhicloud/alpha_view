@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {DiagnoseJob} from './diagnose-job.model';
+import { DiagnoseJob } from './diagnose-job.model';
 
 
 
@@ -9,7 +9,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class NodeService {
+export class DiagnoseService {
 
     constructor(private http: HttpClient) {}
 
